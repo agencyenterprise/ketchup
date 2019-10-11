@@ -117,12 +117,18 @@ const startTimer = () => {
 };
 
 const pauseTimer = () => {
+  if (timerStatus !== TimerStatus.Running) {
+    return;
+  }
   timerStatus = TimerStatus.Paused;
   showNotifications('🍅 Kechup Paused');
   updateStatusBarItem();
 };
 
 const stopTimer = () => {
+  if (timerStatus !== TimerStatus.Running && timerStatus !== TimerStatus.Paused) {
+    return;
+  }
   clock = 0;
   timerStatus = TimerStatus.Stopped;
   showNotifications('🍅 Kechup Stoped');
@@ -130,6 +136,9 @@ const stopTimer = () => {
 };
 
 const resumeTimer = () => {
+  if (timerStatus !== TimerStatus.Paused) {
+    return;
+  }
   timerStatus = TimerStatus.Running;
   showNotifications('🍅 Kechup Running');
   runClock();
