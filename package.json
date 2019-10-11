@@ -1,11 +1,15 @@
 {
-  "name": "ketchup-timer",
+  "name": "ketchup",
   "displayName": "Ketchup Timer",
-  "publisher": "AEStudio",
+  "publisher": "AgencyEnterprise",
   "description": "",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.39.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/agencyenterprise/ketchup.git"
   },
   "categories": [
     "Other"
