@@ -85,14 +85,14 @@ const startWork = () => {
   taskStatus = TaskStatus.Work;
   updateStatusBarItem();
   startTimer();
-  vscode.window.showInformationMessage('startWork');
+  showNotifications('💻 Work Time!');
 };
 
 const starBreak = () => {
   taskStatus = TaskStatus.Break;
   updateStatusBarItem();
   startTimer();
-  vscode.window.showInformationMessage('starBreak');
+  showNotifications('☕️ Break Time!');
 };
 
 const resetClock = () => {
@@ -118,21 +118,29 @@ const startTimer = () => {
 
 const pauseTimer = () => {
   timerStatus = TimerStatus.Paused;
-  vscode.window.showInformationMessage('pauseTimer');
+  showNotifications('🍅 Kechup Paused');
   updateStatusBarItem();
 };
 
 const stopTimer = () => {
   clock = 0;
   timerStatus = TimerStatus.Stopped;
-  vscode.window.showInformationMessage('stopTimer');
+  showNotifications('🍅 Kechup Stoped');
   updateStatusBarItem();
 };
 
 const resumeTimer = () => {
   timerStatus = TimerStatus.Running;
-  vscode.window.showInformationMessage('resumeTimer');
+  showNotifications('🍅 Kechup Running');
   runClock();
+};
+
+const showNotifications = (message: string) => {
+  getUserSettings();
+  if (!notifications) {
+    return;
+  }
+  vscode.window.showInformationMessage(message);
 };
 
 const readableClock = () => {
@@ -161,7 +169,7 @@ const statusBarClicked = () => {
   }
 };
 
-const settings = () => {
+const getUserSettings = () => {
   try {
     const config = vscode.workspace.getConfiguration('ketchup');
     breakSeconds = config.breakMinutes * secondsPerMinute;
@@ -173,7 +181,7 @@ const settings = () => {
 };
 
 export function activate(context: vscode.ExtensionContext) {
-  settings();
+  getUserSettings();
   const statusBarCommandId = 'ketchup.statusBar';
 
   statusBarItem = vscode.window.createStatusBarItem(
