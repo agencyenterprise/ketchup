@@ -10,7 +10,7 @@
   "engines": {
     "vscode": "^1.39.0"
   },
-  "icon": "images/ketchup.png",
+  "icon": "images/icon.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/agencyenterprise/ketchup.git"
