@@ -1,5 +1,5 @@
+![ketchup](https://user-images.githubusercontent.com/99601/66674699-89be1800-ec31-11e9-98b0-a1d5c746d006.png) 
 # Ketchup timer
-![ketchup](https://user-images.githubusercontent.com/99601/66673355-63e34400-ec2e-11e9-8595-517ce6c1dbcf.png)
 
 Pomodoro management time that you help you to work more efficiently on your favorite source-code editor.
 
