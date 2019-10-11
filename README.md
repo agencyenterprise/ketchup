@@ -11,6 +11,9 @@ Pomodoro management time that you help you to work more efficiently on your favo
 ### Settings
 ![ketchup-settings](https://user-images.githubusercontent.com/99601/66673514-bc1a4600-ec2e-11e9-88d2-52c70a84ef24.gif)
 
+## Install
+https://marketplace.visualstudio.com/items?itemName=AgencyEnterprise.ketchup
+
 ## Features
 
 * **Ketchup: Start Timer**: starts the timer
