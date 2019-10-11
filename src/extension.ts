@@ -222,29 +222,13 @@ export function activate(context: vscode.ExtensionContext) {
     },
   );
 
-  const startBreakCommand = vscode.commands.registerCommand(
-    'ketchup.startBreak',
-    () => {
-      starBreak();
-    },
-  );
-
-  const startWorkCommand = vscode.commands.registerCommand(
-    'ketchup.startWork',
-    () => {
-      startWork();
-    },
-  );
-
   statusBarItem.command = statusBarCommandId;
 
   context.subscriptions.push(startTimerCommand);
   context.subscriptions.push(pauseTimerCommand);
   context.subscriptions.push(resumeTimerCommand);
   context.subscriptions.push(stopTimerCommand);
-  context.subscriptions.push(startBreakCommand);
-  context.subscriptions.push(startWorkCommand);
-
+  
   updateStatusBarItem();
 }
 

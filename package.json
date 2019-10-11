@@ -62,14 +62,6 @@
         "command": "ketchup.stopTimer",
         "title": "Ketchup: Stop Timer"
       },
-      {
-        "command": "ketchup.startBreak",
-        "title": "Ketchup: Break Time"
-      },
-      {
-        "command": "ketchup.startWork",
-        "title": "Ketchup: Work Time"
-      }
     ]
   },
   "scripts": {
