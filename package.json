@@ -1,6 +1,7 @@
 {
-  "name": "ketchup",
+  "name": "ketchup-timer",
   "displayName": "Ketchup Timer",
+  "publisher": "AEStudio",
   "description": "",
   "version": "0.0.1",
   "engines": {
