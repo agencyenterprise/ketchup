@@ -1,65 +1,35 @@
-# ketchup README
+# Ketchup timer
+![ketchup](https://user-images.githubusercontent.com/99601/66673355-63e34400-ec2e-11e9-8595-517ce6c1dbcf.png)
 
-This is the README for your extension "ketchup-timer". After writing up a brief description, we recommend including the following sections.
+Pomodoro management time that you help you to work more efficiently on your favorite source-code editor.
+
+**Ketchup Timer** increases agency and we at [AE Studio](https://ae.studio) like building products that increase agency with technology.
+
+## Preview
+![ketchup](https://user-images.githubusercontent.com/99601/66673516-bc1a4600-ec2e-11e9-9c1c-3d3bd58b8990.gif)
+
+### Settings
+![ketchup-settings](https://user-images.githubusercontent.com/99601/66673514-bc1a4600-ec2e-11e9-88d2-52c70a84ef24.gif)
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+* **Ketchup: Start Timer**: starts the timer
+* **Ketchup: Pause Timer**: pauses the timer
+* **Ketchup: Stop Timer**: stops the timer
 
-For example if there is an image subfolder under your extension project workspace:
+## Ketchup Extension Settings
 
-\!\[feature X\]\(images/feature-x.png\)
+* **Work Minutes**: the default duration of a task in minutes
+* **Break Minutes**: the default duration of a break in minutes
+* **Long Break Minutes**: the default duration of a long break in minutes
+* **Long Break Intervals**: total of regular breaks before a looong break
+* **Notifications**: show notifications
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
-## Requirements
+## Thanks to
+* [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
+* [AE Studio](https://ae.studio)
+* Icon made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
 **Enjoy!**
