@@ -2,11 +2,15 @@
   "name": "ketchup",
   "displayName": "Ketchup Timer",
   "publisher": "AgencyEnterprise",
+  "author": {
+    "name": "pererinha"
+  },
   "description": "",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.39.0"
   },
+  "icon": "images/ketchup.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/agencyenterprise/ketchup.git"
@@ -92,5 +96,6 @@
     "typescript": "^3.3.1",
     "tslint": "^5.12.1",
     "vscode-test": "^1.2.0"
-  }
+  },
+  "homepage": "https://github.com/agencyenterprise/ketchup"
 }
