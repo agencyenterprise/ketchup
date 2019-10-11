@@ -27,8 +27,8 @@ Pomodoro management time that you help you to work more efficiently on your favo
 
 
 ## Thanks to
+* [AE Studio ❤️](https://ae.studio)
 * [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique)
-* [AE Studio](https://ae.studio)
 * Icon made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com)
 
 
