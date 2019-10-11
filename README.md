@@ -1,7 +1,7 @@
 ![ketchup](https://user-images.githubusercontent.com/99601/66674699-89be1800-ec31-11e9-98b0-a1d5c746d006.png) 
 # Ketchup timer
 
-Pomodoro management time that you help you to work more efficiently on your favorite source-code editor.
+Pomodoro management timer that you help you to work more efficiently on your favorite source-code editor <3 Visual Studio Code.
 
 **Ketchup Timer** increases agency and we at [AE Studio](https://ae.studio) like building products that increase agency with technology.
 
