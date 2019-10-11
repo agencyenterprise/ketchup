@@ -1,10 +1,10 @@
 import * as vscode from 'vscode';
 
-const SECONDS_PER_MINUTE = 60;
-const DEFAULT_BREAK_SECONDS = 5 * SECONDS_PER_MINUTE;
-const DEFAULT_WORK_SECONDS = 25 * SECONDS_PER_MINUTE;
-const DEFAULT_LONG_BREAK = 15 * SECONDS_PER_MINUTE;
-const DEFAULT_LONG_BREAK_INTERVAL = 4;
+const secondsPerMinute = 60;
+const defaultBreakSeconds = 5 * secondsPerMinute;
+const defaultWorkSeconds = 25 * secondsPerMinute;
+const defaultLongBreakSeconds = 15 * secondsPerMinute;
+const defaultLongBreakInterval = 4;
 
 enum TaskStatus {
   Break,
@@ -17,10 +17,11 @@ enum TimerStatus {
   Running,
 }
 
-const breakSeconds = DEFAULT_BREAK_SECONDS;
-const workSeconds = DEFAULT_WORK_SECONDS;
-const longBreak = DEFAULT_LONG_BREAK;
-const longBreakIntervals = DEFAULT_LONG_BREAK_INTERVAL;
+let breakSeconds = defaultBreakSeconds;
+let workSeconds = defaultWorkSeconds;
+let longBreakSeconds = defaultLongBreakSeconds;
+let longBreakIntervals = defaultLongBreakInterval;
+let notifications = true;
 
 let statusBarItem: vscode.StatusBarItem;
 let taskStatus: TaskStatus = TaskStatus.Work;
@@ -100,7 +101,7 @@ const resetClock = () => {
   }
   if (countWorkTimes === longBreakIntervals) {
     countWorkTimes = 0;
-    return (clock = longBreak);
+    return (clock = longBreakSeconds);
   }
   clock = breakSeconds;
 };
@@ -160,7 +161,19 @@ const statusBarClicked = () => {
   }
 };
 
+const settings = () => {
+  try {
+    const config = vscode.workspace.getConfiguration('ketchup');
+    breakSeconds = config.breakMinutes * secondsPerMinute;
+    workSeconds = config.workMinutes * secondsPerMinute;
+    longBreakSeconds = config.longBreakMinutes * secondsPerMinute;
+    longBreakSeconds = config.longBreakIntervals;
+    notifications = config.notifications;
+  } catch (error) {}
+};
+
 export function activate(context: vscode.ExtensionContext) {
+  settings();
   const statusBarCommandId = 'ketchup.statusBar';
 
   statusBarItem = vscode.window.createStatusBarItem(

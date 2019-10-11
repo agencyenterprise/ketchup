@@ -1,5 +1,5 @@
 {
-  "name": "ketchup-timer",
+  "name": "ketchup",
   "displayName": "Ketchup Timer",
   "description": "",
   "version": "0.0.1",
@@ -14,6 +14,37 @@
   ],
   "main": "./out/extension.js",
   "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "Ketchup Settings",
+      "properties": {
+        "ketchup.workMinutes": {
+          "type": "number",
+          "default": 25,
+          "description": "the default duration of a task in minutes"
+        },
+        "ketchup.breakMinutes": {
+          "type": "number",
+          "default": 5,
+          "description": "the default duration of a break in minutes"
+        },
+        "ketchup.longBreakMinutes": {
+          "type": "number",
+          "default": 15,
+          "description": "the default duration of a long break in minutes"
+        },
+        "ketchup.longBreakIntervals": {
+          "type": "number",
+          "default": 3,
+          "description": "total of regular breaks before a looong break"
+        },
+        "ketchup.notifications": {
+          "type": "boolean",
+          "default": true,
+          "description": "show notifications"
+        }
+      }
+    },
     "commands": [
       {
         "command": "ketchup.startTimer",
