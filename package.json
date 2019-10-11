@@ -61,7 +61,7 @@
       {
         "command": "ketchup.stopTimer",
         "title": "Ketchup: Stop Timer"
-      },
+      }
     ]
   },
   "scripts": {
