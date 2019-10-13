@@ -3,6 +3,8 @@
 
 Pomodoro management timer that you help you to work more efficiently on your favorite source-code editor <3 Visual Studio Code.
 
+https://marketplace.visualstudio.com/items?itemName=AgencyEnterprise.ketchup&ssr=false#overview
+
 **Ketchup Timer** increases agency and we at [AE Studio](https://ae.studio) like building products that increase agency with technology.
 
 ## Preview
