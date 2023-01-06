@@ -53,7 +53,7 @@ const changeTaskStatus = () => {
   }
   if (taskStatus === TaskStatus.Work) {
     countWorkTimes++;
-    return starBreak();
+    return startBreak();
   }
   startWork();
 };
@@ -88,7 +88,7 @@ const startWork = () => {
   showNotifications('💻 Work Time!');
 };
 
-const starBreak = () => {
+const startBreak = () => {
   taskStatus = TaskStatus.Break;
   updateStatusBarItem();
   startTimer();
@@ -126,7 +126,10 @@ const pauseTimer = () => {
 };
 
 const stopTimer = () => {
-  if (timerStatus !== TimerStatus.Running && timerStatus !== TimerStatus.Paused) {
+  if (
+    timerStatus !== TimerStatus.Running &&
+    timerStatus !== TimerStatus.Paused
+  ) {
     return;
   }
   clock = 0;
@@ -195,7 +198,7 @@ export function activate(context: vscode.ExtensionContext) {
 
   statusBarItem = vscode.window.createStatusBarItem(
     vscode.StatusBarAlignment.Right,
-    1000,
+    100
   );
   statusBarItem.hide();
 
@@ -207,28 +210,28 @@ export function activate(context: vscode.ExtensionContext) {
     'ketchup.startTimer',
     () => {
       startTimer();
-    },
+    }
   );
 
   const pauseTimerCommand = vscode.commands.registerCommand(
     'ketchup.pauseTimer',
     () => {
       pauseTimer();
-    },
+    }
   );
 
   const resumeTimerCommand = vscode.commands.registerCommand(
     'ketchup.resumeTimer',
     () => {
       resumeTimer();
-    },
+    }
   );
 
   const stopTimerCommand = vscode.commands.registerCommand(
     'ketchup.stopTimer',
     () => {
       stopTimer();
-    },
+    }
   );
 
   statusBarItem.command = statusBarCommandId;
@@ -237,7 +240,7 @@ export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(pauseTimerCommand);
   context.subscriptions.push(resumeTimerCommand);
   context.subscriptions.push(stopTimerCommand);
-  
+
   updateStatusBarItem();
 }
 

@@ -1,4 +1,5 @@
 ![ketchup](https://user-images.githubusercontent.com/99601/66674699-89be1800-ec31-11e9-98b0-a1d5c746d006.png) 
+
 # Ketchup Timer
 
 Boost your productivity with our Ketchup Timer, a powerful tool that helps you manage your time and increase your focus while working in your favorite source-code editor, Visual Studio Code. 
