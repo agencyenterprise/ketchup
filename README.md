@@ -1,7 +1,9 @@
 ![ketchup](https://user-images.githubusercontent.com/99601/66674699-89be1800-ec31-11e9-98b0-a1d5c746d006.png) 
-# Ketchup timer
+# Ketchup Timer
 
-Boost your productivity with our Pomodoro timer, a powerful tool that helps you manage your time and increase your focus while working in your favorite source-code editor, Visual Studio Code. Visual Studio Code is the most popular source-code editor used by millions of developers worldwide, and our Pomodoro timer is the perfect companion to help you work more efficiently and effectively. Try it out today and see the difference it can make in your workflow!
+Boost your productivity with our Ketchup Timer, a powerful tool that helps you manage your time and increase your focus while working in your favorite source-code editor, Visual Studio Code. 
+
+Visual Studio Code is the most popular source-code editor used by millions of developers worldwide, and our Ketchup Timer is the perfect companion to help you work more efficiently and effectively. Try it out today and see the difference it can make in your workflow!
 
 https://marketplace.visualstudio.com/items?itemName=AgencyEnterprise.ketchup&ssr=false#overview
 
